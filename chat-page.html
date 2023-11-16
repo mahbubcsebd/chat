@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uibarn | Chatbot</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Emoji -->
+    <link rel="stylesheet" href="assets/css/emojionearea.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div style="height: 100vh; position: relative;">
+        <!-- Chatbot Section Start -->
+        <div id="ui-chatbot" class="ui-chatbot">
+            <div class="ui-chatbot-area">
+                <div class="ui-chatbot-box">
+                    <div class="ui-chatbot-header">
+                        <img src="assets/images/chat-header-bg.svg" alt="uich-bg" class="uich-bg">
+                        <div class="uich-content">
+                            <div class="uich-chat-btn"><span><img src="assets/images/icons/chat.svg" alt=""></span> Chat
+                            </div>
+                            <div class="uich-avatar-wrapper">
+                                <a href="#" class="uich-avatar-img">
+                                    <img src="assets/images/avatar-1.png" alt="avater">
+                                </a>
+                                <a href="#" class="uich-avatar-img">
+                                    <img src="assets/images/avatar-2.png" alt="avater">
+                                </a>
+                                <a href="#" class="uich-avatar-img">
+                                    <img src="assets/images/avatar-3.png" alt="avater">
+                                </a>
+                            </div>
+                            <h2 class="uich-title">Have any questions? Chat with us!</h2>
+                        </div>
+                    </div>
+                    <div class="ui-chatbot-body">
+                        <div class="ui-chatbot-chat-wrapper">
+                            <div class="ui-chatbot-fast-support">
+                                <ul class="uifs-collections">
+                                    <li><a href="#">Contributor inquiries</a></li>
+                                    <li><a href="#">Subscription</a></li>
+                                    <li><a href="#">Assets & License policy</a></li>
+                                    <li><a href="#">Manage Profile</a></li>
+                                </ul>
+                            </div>
+                            <div class="ui-single-chat ui-single-chat-company">
+                                <div>
+                                    <div class="ui-chatbot-avatar">
+                                        <img src="assets/images/logo.png" alt="avater">
+                                    </div>
+                                </div>
+                                <div class="ui-chatbot-chat-content">
+                                    <span class="ui-chat-writter">Ui Barn</span>
+                                    <p class="ui-chat-msg company-msg">Hello! I'm sorry to hear you're facing issues
+                                        with your account setup. I'm here to help. Can you provide more details
+                                        about the specific challenges you're encountering? This will help me better
+                                        assist you.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-single-chat ui-single-chat-client ui-last-client-msg">
+                                <div class="ui-chatbot-chat-content">
+                                    <p class="ui-chat-msg client-msg">Hello! I'm having trouble setting up my account on
+                                        your platform.
+                                    </p>
+                                    <p class="read-status"><span><img src="assets/images/icons/tick.svg"
+                                                alt="tick"></span>Read in chat</p>
+                                </div>
+                            </div>
+                            <div class="ui-single-chat ui-single-chat-company">
+                                <div>
+                                    <div class="ui-chatbot-avatar">
+                                        <img src="assets/images/logo.png" alt="avater">
+                                    </div>
+                                </div>
+                                <div class="ui-chatbot-chat-content">
+                                    <span class="ui-chat-writter">Ui Barn</span>
+                                    <p class="ui-chat-msg company-msg">Hello! Welcome to <a href="https://uibarn.com">Ui
+                                            Barn</a>. How can i assist you
+                                        today?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-chatbot-time">
+                                <p>7 Aug at 10:26 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-chatbot-send-box">
+                        <form class="ui-chatbot-msg-form">
+                            <div class="uimf-content">
+                                <div class="uimf-upload">
+                                    <div id="inputParent" class="file-input">
+                                        <input type="file" name="file-input" id="file-input" class="file-input__input">
+                                        <label class="file-input__label" for="file-input">
+                                            <span id="fileLabel"><img src="assets/images/icons/upload.svg"
+                                                    alt="upload"></span></label>
+                                    </div>
+                                </div>
+                                <div class="uimf-msg-box">
+                                    <!-- <textarea id="uimf-msg" type="text" class="uimf-msg-input"
+                                        placeholder="Type Your Message"></textarea> -->
+                                    <input id="uimf-msg" type="text" class="uimf-msg-input"
+                                        placeholder="Type Your Message">
+                                </div>
+                                <div class="uimf-send">
+                                    <button type="submit" class="uimf-send-btn"><img src="assets/images/icons/send.svg"
+                                            alt="send"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Chatbot Section End -->
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <!-- Waypoint -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Emoji -->
+    <script src="assets/js/emojionearea.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#uimf-msg").emojioneArea();
+        });
+    </script>
+</body>
+
+</html>
