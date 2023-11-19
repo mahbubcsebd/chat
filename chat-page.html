@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uibarn | Chatbot</title>
+    <title>Uibarn | Chat Dashboard</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <!-- Inter Google Font -->
@@ -21,118 +21,322 @@
     <!-- Emoji -->
     <link rel="stylesheet" href="assets/css/emojionearea.min.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-    <div style="height: 100vh; position: relative;">
-        <!-- Chatbot Section Start -->
-        <div id="ui-chatbot" class="ui-chatbot">
-            <div class="ui-chatbot-area">
-                <div class="ui-chatbot-box">
-                    <div class="ui-chatbot-header">
-                        <img src="assets/images/chat-header-bg.svg" alt="uich-bg" class="uich-bg">
-                        <div class="uich-content">
-                            <div class="uich-chat-btn"><span><img src="assets/images/icons/chat.svg" alt=""></span> Chat
-                            </div>
-                            <div class="uich-avatar-wrapper">
-                                <a href="#" class="uich-avatar-img">
-                                    <img src="assets/images/avatar-1.png" alt="avater">
-                                </a>
-                                <a href="#" class="uich-avatar-img">
-                                    <img src="assets/images/avatar-2.png" alt="avater">
-                                </a>
-                                <a href="#" class="uich-avatar-img">
-                                    <img src="assets/images/avatar-3.png" alt="avater">
-                                </a>
-                            </div>
-                            <h2 class="uich-title">Have any questions? Chat with us!</h2>
-                        </div>
+    <!-- Chat Dashboard Start -->
+    <div id="chat-dashboard" class="chat-dashboard">
+        <div class="chat-dashboard-area">
+            <aside class="ui-chat-dashboard-sidebar">
+                <div class="ui-sidebar-top">
+                    <div class="uicd-logo">
+                        <img src="assets/images/icons/logo.svg" alt="logo">
                     </div>
-                    <div class="ui-chatbot-body">
-                        <div class="ui-chatbot-chat-wrapper">
-                            <div class="ui-chatbot-fast-support">
-                                <ul class="uifs-collections">
-                                    <li><a href="#">Contributor inquiries</a></li>
-                                    <li><a href="#">Subscription</a></li>
-                                    <li><a href="#">Assets & License policy</a></li>
-                                    <li><a href="#">Manage Profile</a></li>
-                                </ul>
-                            </div>
-                            <div class="ui-single-chat ui-single-chat-company">
-                                <div>
-                                    <div class="ui-chatbot-avatar">
-                                        <img src="assets/images/logo.png" alt="avater">
+                    <ul class="uicd-sidebar-menu">
+                        <li><a href="#"><span><img src="assets/images/icons/home.svg" alt="home"></span>Home</a></li>
+                        <li><a href="#"><span><img src="assets/images/icons/chat-icon.svg"
+                                        alt="chat-icon"></span>Chat</a>
+                        </li>
+                        <li><a href="#"><span><img src="assets/images/icons/contact.svg"
+                                        alt="contact"></span>Contact</a>
+                        </li>
+                        <li><a href="#"><span><img src="assets/images/icons/notification.svg"
+                                        alt="notification"></span>Notifications</a>
+                        </li>
+                        <li><a href="#"><span><img src="assets/images/icons/calander.svg"
+                                        alt="calander"></span>Calendar</a>
+                        </li>
+                        <li><a href="#"><span><img src="assets/images/icons/setting.svg"
+                                        alt="setting"></span>Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uicd-sidebar-footer">
+                    <a href="#" class="uicd-logout-btn"><span><img src="assets/images/icons/logout.svg"
+                                alt="logout"></span>Log out</a>
+                </div>
+            </aside>
+            <div class="ui-chat-dashboard-main">
+                <header class="uicd-header">
+                    <div class="uicd-header-left">
+                        <h2 class="uicd-header-title">Message</h2>
+                        <button type="button" class="uicd-header-edit">
+                            <img src="assets/images/icons/edit.svg" alt="edit">
+                        </button>
+                    </div>
+                    <div class="uicd-header-middle">
+                        <button type="button" class="uicd-header-profile-btn">
+                            <img src="assets/images/icons/message.svg" alt="message">
+                        </button>
+                        <button type="button" class="uicd-header-profile-btn notification-btn">
+                            <img src="assets/images/icons/header-notification.svg" alt="notification">
+                            <span class="uicd-notification-number">3</span>
+                        </button>
+                        <div class="uicd-header-profile-box">
+                            <div class="uicd-header-profile">
+                                <div class="uicd-header-profile-img">
+                                    <img src="assets/images/avatar-img.png" alt="avatar">
+                                </div>
+                                <div class="uicd-header-profile-content">
+                                    <button class="uicd-header-profile-name">Mahbub <span><img
+                                                src="assets/images/icons/down-arrow.svg"
+                                                alt="down-arrow"></span></button>
+                                    <div class="uicd-header-profile-menu-dropdown">
+                                        <ul class="uicd-header-profile-menu-list">
+                                            <li><a href="#">Mahbubur Rahman</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="ui-chatbot-chat-content">
-                                    <span class="ui-chat-writter">Ui Barn</span>
-                                    <p class="ui-chat-msg company-msg">Hello! I'm sorry to hear you're facing issues
-                                        with your account setup. I'm here to help. Can you provide more details
-                                        about the specific challenges you're encountering? This will help me better
-                                        assist you.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ui-single-chat ui-single-chat-client ui-last-client-msg">
-                                <div class="ui-chatbot-chat-content">
-                                    <p class="ui-chat-msg client-msg">Hello! I'm having trouble setting up my account on
-                                        your platform.
-                                    </p>
-                                    <p class="read-status"><span><img src="assets/images/icons/tick.svg"
-                                                alt="tick"></span>Read in chat</p>
-                                </div>
-                            </div>
-                            <div class="ui-single-chat ui-single-chat-company">
-                                <div>
-                                    <div class="ui-chatbot-avatar">
-                                        <img src="assets/images/logo.png" alt="avater">
-                                    </div>
-                                </div>
-                                <div class="ui-chatbot-chat-content">
-                                    <span class="ui-chat-writter">Ui Barn</span>
-                                    <p class="ui-chat-msg company-msg">Hello! Welcome to <a href="https://uibarn.com">Ui
-                                            Barn</a>. How can i assist you
-                                        today?
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ui-chatbot-time">
-                                <p>7 Aug at 10:26 AM</p>
                             </div>
                         </div>
                     </div>
-                    <div class="ui-chatbot-send-box">
-                        <form class="ui-chatbot-msg-form">
-                            <div class="uimf-content">
-                                <div class="uimf-upload">
-                                    <div id="inputParent" class="file-input">
-                                        <input type="file" name="file-input" id="file-input" class="file-input__input">
-                                        <label class="file-input__label" for="file-input">
-                                            <span id="fileLabel"><img src="assets/images/icons/upload.svg"
-                                                    alt="upload"></span></label>
-                                    </div>
+                    <div class="uicd-header-right">
+                        <h2 class="uicd-header-visitor">Visitor Info <span><img src="assets/images/icons/info.svg"
+                                    alt="info"></span></h2>
+                    </div>
+                </header>
+                <div id="ui-main-chatbox" class="ui-main-chatbox">
+                    <div class="ui-main-chatbox-area">
+                        <div class="uimc-content-wrapper">
+                            <div class="uimc-friend-box">
+                                <div class="uimcf-filter-box">
+                                    <button type="button"><span><img src="assets/images/icons/msg.svg"
+                                                alt="msg"></span>All</button>
+                                    <button type="button"><span><img src="assets/images/icons/unread-msg.svg"
+                                                alt="msg"></span>Unread</button>
+                                    <button type="button"><span><img src="assets/images/icons/unresolved.svg"
+                                                alt="msg"></span>Unresolved</button>
+                                    <button type="button"><span><img src="assets/images/icons/filter.svg"
+                                                alt="filter"></span></button>
                                 </div>
-                                <div class="uimf-msg-box">
-                                    <!-- <textarea id="uimf-msg" type="text" class="uimf-msg-input"
-                                        placeholder="Type Your Message"></textarea> -->
-                                    <input id="uimf-msg" type="text" class="uimf-msg-input"
-                                        placeholder="Type Your Message">
+                                <div class="uimc-friend-search-box">
+                                    <input type="text" class="friend-serch-input"
+                                        placeholder="Search by person, priority...">
+                                    <button><img src="assets/images/icons/search.svg" alt="search"></button>
                                 </div>
-                                <div class="uimf-send">
-                                    <button type="submit" class="uimf-send-btn"><img src="assets/images/icons/send.svg"
-                                            alt="send"></button>
+                                <div class="uimc-friend-list">
+                                    <ul class="uimc-friend-list-collection">
+                                        <li>
+                                            <div class="uimc-single-friend unread">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-1.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">Mahbubur Rahman</h3>
+                                                        <p class="uimc-single-friend-msg">Hi there! The account I have
+                                                            isn't
+                                                            working.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>10:45 PM</p>
+                                                    <p class="unread-msg-num">2</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-2.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">William S. Napier</h3>
+                                                        <p class="uimc-single-friend-msg">Hello! 👋 Welcome to Ui Barn.
+                                                            I'm
+                                                            your virtual assistant. How can I help?.........</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>Yesterday</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-3.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">Kevin E. Granger</h3>
+                                                        <p class="uimc-single-friend-msg">Hello William, How Are You
+                                                            Today?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>12 Nov 2023</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-4.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">Joel K. Madigan</h3>
+                                                        <p class="uimc-single-friend-msg">Hello Madigan, How Are You
+                                                            Today?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>11 Nov 2023</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-5.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">Charles M. Troiano</h3>
+                                                        <p class="uimc-single-friend-msg">Hello Charles, How Are You
+                                                            Today?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>7 Aug at 10:26 AM</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-6.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">Alecia B. Bruce</h3>
+                                                        <p class="uimc-single-friend-msg">Hello Charles, How Are You
+                                                            Today?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>10 Nov 2023</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-7.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">David S. Boykin</h3>
+                                                        <p class="uimc-single-friend-msg">Hello Charles, How Are You
+                                                            Today?
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>10 Nov 2023</p>
+                                                    <p class="unread-msg-num">2</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uimc-single-friend">
+                                                <div class="ui-sf-left">
+                                                    <div>
+                                                        <div class="uimc-single-friend-img">
+                                                            <img src="assets/images/user-9.png" alt="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uimc-single-friend-content">
+                                                        <h3 class="uimc-single-friend-name">Richard L. Kern</h3>
+                                                        <p class="uimc-single-friend-msg">Hello Charles, How Are You
+                                                            Today?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uimc-single-friend-time">
+                                                    <p>10 Nov 2023</p>
+                                                    <p class="unread-msg-num">2</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </form>
+                            <div class="uimc-chat-message-box"></div>
+                            <div class="uimc-friend-info-box">
+                                <div class="uimc-friend-info-header">
+                                    <div>
+                                        <div class="uimc-friend-info-header-img">
+                                            <img src="assets/images/user-1.png" alt="user">
+                                        </div>
+                                    </div>
+                                    <div class="uimc-friend-info-header-content">
+                                        <h3 class="uimc-friend-info-header-name">Mahbubur Rahman</h3>
+                                        <p class="uimc-friend-info-header-email">mahbub.cse.me@gmail.com</p>
+                                        <p class="uimc-friend-info-header-address">Dhaka</p>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="uimc-friend-info-content">
+                                    <div class="uimc-fic-single">
+                                        <h3 class="uimc-fic-title">Main Information</h3>
+                                        <ul class="uimc-fic-collection">
+                                            <li><span><img src="assets/images/icons/clock.svg"
+                                                        alt="clock"></span>10:30AM
+                                                (UTC+6)</li>
+                                            <li><span><img src="assets/images/icons/clock.svg" alt="clock"></span>Dhaka,
+                                                Bangladesh</li>
+                                            <li><span><img src="assets/images/icons/clock.svg"
+                                                        alt="clock"></span>English (US),
+                                                Bangladesh</li>
+                                            <li><span><img src="assets/images/icons/clock.svg"
+                                                        alt="clock"></span>https://www.facebook.com/mahbub</li>
+                                        </ul>
+                                    </div>
+                                    <div class="uimc-fic-single">
+                                        <h3 class="uimc-fic-title">Visitor Device</h3>
+                                        <ul class="uimc-fic-collection">
+                                            <li><span><img src="assets/images/icons/chrome.svg"
+                                                        alt="clock"></span>27.147.202.451 Chrome on Windows</li>
+                                            <li><span><img src="assets/images/icons/mozila.svg"
+                                                        alt="clock"></span>32.147.202.451 Mozilla on Windows</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Chatbot Section End -->
     </div>
+    <!-- Chat Dashboard End -->
 
 
     <!-- jQuery -->
@@ -149,7 +353,7 @@
     <script src="assets/js/fontawesome.min.js"></script>
     <!-- Main Script -->
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
+    <script>
         $(document).ready(function () {
             $("#uimf-msg").emojioneArea();
         });

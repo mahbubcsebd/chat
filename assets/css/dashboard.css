@@ -1,0 +1,555 @@
+/* Layout skeleton */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+h3 {
+    font-size: 1.2375rem;
+    color: #fff;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Sidebar Start */
+.chat-dashboard-area {
+    display: flex;
+}
+
+.ui-chat-dashboard-sidebar {
+    width: 290px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 23.85965px 5.61404px 50px 0px rgba(0, 0, 0, 0.02),
+        35.08772px 0px 70px 0px rgba(86, 128, 248, 0.05),
+        14.03509px 0px 25px 0px rgba(86, 128, 248, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 40px;
+}
+
+.uicd-sidebar-menu li a {
+    color: #707c97;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.uicd-sidebar-menu {
+    display: grid;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.uicd-logout-btn {
+    color: #707c97;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+/* Sidebar End */
+
+/* Header Section Start */
+.uicd-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.ui-chat-dashboard-main {
+    width: 100%;
+}
+
+.uicd-header-left {
+    width: 485px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uicd-header {
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    padding: 18px 24px;
+}
+
+.uicd-header-title {
+    color: var(--Title-Text-Color, #15203e);
+
+    /* H3 28pt */
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 33.6px */
+    letter-spacing: -0.56px;
+}
+
+.uicd-header-visitor {
+    color: var(--Title-Text-Color, #15203e);
+
+    /* H4 24pt */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -0.48px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.uicd-header-right {
+    width: 400px;
+}
+
+.uicd-header-middle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.uicd-header-profile-menu-list {
+    display: none;
+}
+
+.uicd-header-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.uicd-header-profile-name {
+    color: var(--grayscale-900, #05153c);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.uicd-header-profile-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.uicd-header-profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.uicd-header-profile-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(
+        180deg,
+        rgba(243, 243, 245, 0) 0%,
+        #f3f3f5 113.64%
+    );
+    border: 2px solid #e6e8ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-btn {
+    position: relative;
+}
+
+.uicd-notification-number {
+    position: absolute;
+    content: '';
+    top: 6px;
+    right: 6px;
+    color: var(--additional-color-white, #fff);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 10.8px */
+    width: 14px;
+    height: 14px;
+    background: #ff881b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.uicd-header-edit {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px 0px rgba(75, 75, 75, 0.15);
+}
+/* Header Section End */
+
+/* Friends List Section Start */
+.uicd-logout-btn {
+    color: #707c97;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.uimc-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.uimc-friend-box {
+    width: 540px;
+    background: #fff;
+    padding: 24px;
+    margin: 1px;
+}
+
+.uimcf-filter-box button {
+    color: var(--Title-Text-Color, #15203e);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--grayscale-300, #e6e8ec);
+    background: var(--base-white, #fff);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.uimcf-filter-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.uimcf-filter-box button:last-child {
+    padding: 10px !important;
+}
+
+.friend-serch-input {
+    border-radius: 8px;
+    border: 1px solid var(--grayscale-300, #e6e8ec);
+    background: var(--base-white, #fff);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    color: var(--grayscale-600, #69738a);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.uimc-friend-search-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.uimc-friend-search-box button {
+    position: absolute;
+    content: '';
+    left: 14px;
+    top: 8px;
+}
+
+.uimc-single-friend-name {
+    color: var(--Title-Text-Color, #15203e);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+    margin-bottom: 8px;
+}
+
+.uimc-single-friend-msg {
+    color: var(--Paragraph-Text-Color, #6a6f7d);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+}
+
+.unread .uimc-single-friend-msg {
+    color: #15203e;
+}
+
+.ui-sf-left {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+    text-align: left;
+}
+
+.uimc-single-friend-time p {
+    color: var(--Paragraph-Text-Color, #6a6f7d);
+    text-align: right;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+}
+
+.unread-msg-num {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Title-Text-Color, #15203e);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.36px;
+    background: #bed0ff;
+}
+
+.uimc-friend-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.uimc-single-friend {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px 10px;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    border-bottom: 1px solid #ddd;
+}
+
+.uimc-single-friend:hover {
+    background: #f6f6f6;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.uimc-single-friend-time {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: end;
+}
+
+.uimc-friend-list {
+    height: 420px;
+    overflow-y: auto;
+    width: calc(100% + 10px);
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.uimc-friend-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.uimc-friend-list::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+.uimc-friend-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Friends List Section End */
+
+/* User Info Section Start */
+.uimc-friend-info-box {
+    background: #fff;
+    margin-top: 1px;
+}
+
+.uimc-friend-info-header {
+    padding: 24px;
+    display: flex;
+    gap: 12px;
+}
+
+.uimc-friend-info-header-name {
+    color: var(--Title-Text-Color, #15203e);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+    margin-bottom: 0px;
+}
+
+.uimc-friend-info-header-email {
+    color: var(--Paragraph-Text-Color, #6a6f7d);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.16px;
+    margin-bottom: 0px;
+}
+
+.uimc-friend-info-header-address {
+    color: var(--Paragraph-Text-Color, #6a6f7d);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+}
+
+.divider {
+    border-top: 1px solid #9ca6af;
+}
+
+.uimc-fic-single {
+    margin-bottom: 24px;
+}
+
+.uimc-friend-info-content {
+    padding: 24px;
+}
+
+.uimc-fic-title {
+    color: var(--Sub-Title-Text-Color, #474b4f);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -0.18px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.uimc-fic-title::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -6px;
+    background: #2763fe;
+    width: 33px;
+    height: 3px;
+}
+
+.uimc-friend-info-header-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.uimc-friend-info-header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.uimc-fic-collection li {
+    color: var(--Sub-Title-Text-Color, #474b4f);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+/* User Info Section End */
